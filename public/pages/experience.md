@@ -28,7 +28,7 @@
 
 &nbsp;
 
-**Web Development Intern** @ [SIPORTY](https://www.facebook.com/Siporty.tn/) _(July 2015 - July 2015)_
+**Web Development Intern** @ [SIPORTY](https://www.facebook.com/Siporty.tn/) _(July 2021 - July 2021)_
 
 - Overhauled SIPORTY website backend using MongoDB and ExpressJS.
 - Configured CircleCI to automatically update the deployment of the new code.  
