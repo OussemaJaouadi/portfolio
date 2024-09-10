@@ -10,7 +10,7 @@
 - **Docker Swarm**  
   *Spent about 2 years working with Docker Swarm. It’s good, but...*
 - **Kubernetes**  
-  *...Kubernetes has been my preference for the last year. I’m currently working through the CKA/CKAD courses on KodeKloud. While I mostly use KinD for projects, I recently tried K3d and loved it! I also set up a kubeadm cluster just out of curiosity.*
+  *...Kubernetes has been my preference for the last year. I’m currently working through the CKA/CKAD courses on KodeKloud. While I mostly use KinD for projects, I recently tried K3d and loved it! I also set up a kubeadm cluster just out of curiosity. Additionally, I’ve been actively creating my own Kubernetes manifests and using tools like Helm and Kustomize to manage and customize deployments efficiently.*
 
 ### Infrastructure as Code (IaC)
 - **Ansible**  
