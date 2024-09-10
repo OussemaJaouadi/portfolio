@@ -4,9 +4,9 @@ As a recent graduate in Computer Networks and Telecommunication Engineering from
 
 I have a solid foundation in DevOps, with hands-on experience in Docker, Kubernetes, Ansible, and a range of CI/CD tools. My background includes backend development and cybersecurity, with experience in CTF participation and challenge creation. Through internships and volunteer work, I have gained valuable project experience and technical skills.
 
-Currently, I am pursuing certifications in AWS Cloud Practitioner and Kubernetes to further enhance my expertise. My professional values emphasize constructive feedback, trust, accountability, and a commitment to ongoing improvement.
+I am currently pursuing certifications to further deepen my knowledge and skills. My professional ethos revolves around embracing constructive criticism, fostering trust and accountability, thriving on diverse perspectives, and striving for continuous improvement.
 
-I am eager to contribute my skills, enthusiasm, and fresh perspective to a dynamic team in the DevOps or SRE field. My objective is to engage in innovative projects and continue growing in cloud technologies, infrastructure as code, and secure system design.
+I am excited to contribute to projects that push the boundaries of what's possible, focusing on creating and refining systems that stand out for their robustness, efficiency, and innovation.
 
 [Download My CV](https://drive.google.com/file/d/1STPK0AurM8PXLg_1GHtXNoKIe5i8GJaE/view?usp=sharing)
 
