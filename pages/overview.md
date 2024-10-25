@@ -8,6 +8,6 @@ I am currently pursuing certifications to further deepen my knowledge and skills
 
 I am excited to contribute to projects that push the boundaries of what's possible, focusing on creating and refining systems that stand out for their robustness, efficiency, and innovation.
 
-[Download My CV](https://drive.google.com/file/d/1Z1Y5U1LP_GttMJDaLaI9-l1faBp8kN7D/view?usp=sharing)
+[Download My CV](https://drive.google.com/file/d/1bMZyRn2sTCGBndXI_QXzQMrlm1ll5moK/view?usp=sharing)
 
 Explore the sections below for a deeper look at my experiences, projects, and technical skills in DevOps and SRE.
