@@ -15,6 +15,14 @@
 ### Infrastructure as Code (IaC)
 - **Ansible**  
   *Started learning Ansible in early 2024, and I quickly became a fan. It’s simple and agentless—exactly what I like in a tool.*
+- **Terraform**
+  *Basic Idea about Terraform and HCL syntaxe but I don't have the resources to try it on a cloud provider*
+
+### Cloud 
+- **AWS**
+  *I recently completed Cloud Practitioner cours and I'm learning Solution Architect cours right now, But I don't have resources to have hands on labs*
+- **Azure**
+  *I used to play with some services since I had Azure student pack but very basic knowledge*
 
 ### CI/CD
 - **GitLab CI**  
@@ -36,7 +44,10 @@
 - **SonarQube**  
 
 ### Service Mesh
-- **Istio**  
+- **Istio** 
+  *Basic Knowledge*
+- **Consul**
+  *Basic Knowledge, But willing to try it soon*  
 
 ## Concepts
 - **Design Patterns**  
@@ -102,10 +113,10 @@
   *I’ve gone deep into setting up Elasticsearch environments using Docker Compose and Kubernetes. I know how to configure it into multi-node clusters and manage it well.*
 
 ## To Do & Learning Goals
-- **AWS Certified Cloud Practitioner**  
+- **AWS Certified Solution Architect**  
   *I’m currently studying for this certification, and after that, I plan to dive into Terraform.*
 - **Terraform**  
-  *I’ve read a lot about Terraform and understand the basics like tfstate, but I want to get hands-on after learning cloud provider concepts. Pulumi also looks interesting, but Terraform is more common in the workplace.*
+  *I’ve read a lot about Terraform and understand the basics like tfstate, but I want to get hands-on after and writing some code even without resources only code for that. Pulumi also looks interesting, but Terraform is more common in the workplace.*
 - **CKA/CKAD**  
   *Currently working through these certifications. Kubernetes mastery, here I come!*
 - **Additional Goals**  
