@@ -1,4 +1,16 @@
 # 💬 Languages
-**English**: Very Fluent (spoken), but prone to typos when writing!
-**French**: Fluent (spoken), but beware of grammatical blunders in writing!
-**Arabic**: Native
+
+## Arabic
+- **Proficiency**: Native
+- **Reading & Writing**: Excellent
+- **Speaking**: Mother tongue
+
+## English
+- **Proficiency**: Advanced
+- **Reading & Writing**: Very good, occasional typos
+- **Speaking**: Very fluent
+
+## French
+- **Proficiency**: Advanced
+- **Reading & Writing**: Good, occasional grammatical errors
+- **Speaking**: Fluent
