@@ -1,10 +1,19 @@
 import React from "react";
-import { Box, Link, Paper, Tooltip } from "@mui/material";
+import {
+  Box,
+  IconButton,
+  Link,
+  Tooltip,
+  Divider,
+  useTheme,
+} from "@mui/material";
 import LightModeOutlinedIcon from "@mui/icons-material/LightModeOutlined";
 import DarkModeOutlinedIcon from "@mui/icons-material/DarkModeOutlined";
-import { VscFiles, VscSettingsGear } from "react-icons/vsc";
+import MenuIcon from "@mui/icons-material/Menu";
+import MenuOpenIcon from "@mui/icons-material/MenuOpen";
+import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
+import { VscFiles, VscSettingsGear, VscAccount } from "react-icons/vsc";
 import { BiGitBranch } from "react-icons/bi";
-import Divider from "@mui/material/Divider";
 import { links } from "../pages/links";
 import { useNavigate } from "react-router-dom";
 
@@ -14,6 +23,7 @@ interface Props {
   darkMode: boolean;
   handleThemeChange: () => void;
   setSelectedIndex: React.Dispatch<React.SetStateAction<number>>;
+  mobileView?: boolean;
 }
 
 export default function Sidebar({
@@ -22,182 +32,184 @@ export default function Sidebar({
   darkMode,
   handleThemeChange,
   setSelectedIndex,
+  mobileView,
 }: Props) {
   const navigate = useNavigate();
+  
+  // Side effect icons style
+  const iconStyle = {
+    fontSize: 24,
+    color: darkMode ? "#858585" : "#666666",
+    cursor: "pointer",
+    transition: "color 0.2s ease",
+    "&:hover": {
+      color: darkMode ? "white" : "#333333",
+    },
+  };
+
   return (
     <Box
       sx={{
-        height: `calc(100vh - 20px)`,
-        backgroundColor: darkMode ? "#333333" : "#2c2c2c",
+        height: "100%",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "space-between",
+        overflow: "hidden",
       }}
-      justifyContent="space-between"
-      display="flex"
-      flexDirection="column"
-      component={Paper}
-      square
-      elevation={0}
     >
-      <Box
-        sx={{ flexGrow: 0 }}
-        display="flex"
-        justifyContent="center"
-        flexDirection="column"
-      >
-        <Box
-          sx={{
-            borderLeft: expanded
-              ? "solid 0.12em white"
-              : darkMode
-              ? "solid 0.12em #333333"
-              : "solid 0.12em #2c2c2c",
-            cursor: "pointer",
-            WebkitTapHighlightColor: "rgba(0,0,0,0)",
-          }}
-          onClick={() => setExpanded(!expanded)}
-        >
-          <Box
+      {/* Top section */}
+      <Box>
+        {/* Toggle sidebar button */}
+        <Tooltip title={expanded ? "Collapse Sidebar" : "Expand Sidebar"} placement="right">
+          <IconButton
             sx={{
-              flexGrow: 0,
-              my: 1.5,
-              color: expanded ? "white" : "#858585",
-              fontSize: 24,
-              outline: "none",
-              "&:hover": {
-                color: "white",
-              },
+              width: "100%", 
+              height: 48,
+              borderRadius: 0,
             }}
-            display="flex"
-            justifyContent="center"
+            onClick={() => setExpanded(!expanded)}
           >
-            <VscFiles />
-          </Box>
-        </Box>
-        <Tooltip title="Source of this project" arrow placement="right">
+            {expanded ? 
+              <MenuOpenIcon sx={iconStyle} /> :
+              <MenuIcon sx={iconStyle} />
+            }
+          </IconButton>
+        </Tooltip>
+        
+        <Divider sx={{ my: 1, mx: 1 }} />
+        
+        {/* Files explorer */}
+        <Tooltip title="Explorer" placement="right">
+          <IconButton
+            sx={{
+              width: "100%", 
+              height: 48,
+              borderRadius: 0,
+              bgcolor: (theme) => expanded ? 
+                (darkMode ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)') : 
+                'transparent'
+            }}
+            onClick={() => {
+              navigate("/");
+              setSelectedIndex(-1);
+            }}
+          >
+            <VscFiles style={iconStyle} />
+          </IconButton>
+        </Tooltip>
+        
+        {/* User profile */}
+        <Tooltip title="My Portfolio" placement="right">
+          <IconButton
+            sx={{
+              width: "100%", 
+              height: 48,
+              borderRadius: 0,
+            }}
+            onClick={() => {
+              navigate("/overview");
+              setSelectedIndex(0);
+            }}
+          >
+            <VscAccount style={iconStyle} />
+          </IconButton>
+        </Tooltip>
+        
+        {/* Git */}
+        <Tooltip title="Source Code" placement="right">
           <Link
+            href={links[0].href}
             target="_blank"
-            href={"https://github.com/noworneverev/react-vscode-portfolio"}
-            underline="none"
-            color="inherit"
-            sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
+            sx={{ 
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: 48,
+            }}
           >
-            <Box
-              sx={{
-                flexGrow: 0,
-                cursor: "pointer",
-                color: "#858585",
-                fontSize: 24,
-                "&:hover": {
-                  color: "white",
-                },
-              }}
-              display="flex"
-              justifyContent="center"
-            >
-              <Box mt={0.7}>
-                <BiGitBranch />
-              </Box>
-            </Box>
+            <BiGitBranch style={iconStyle} />
           </Link>
         </Tooltip>
-
-        <Divider sx={{ m: 0.5 }} />
-
+      </Box>
+      
+      {/* Bottom section */}
+      <Box>
+        {/* Contact links */}
+        <Divider sx={{ my: 1, mx: 1 }} />
+        
+        {/* Contact links section icon */}
+        <Tooltip title="Contact Information" placement="right">
+          <Box 
+            sx={{ 
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: 40,
+              color: theme => theme.palette.mode === 'dark' ? '#858585' : '#666666',
+            }}
+          >
+            <ContactsOutlinedIcon fontSize="small" />
+          </Box>
+        </Tooltip>
+        
         {links.map((link) => (
-          <Tooltip title={link.title} arrow placement="right" key={link.index}>
+          <Tooltip key={link.index} title={link.title} placement="right">
             <Link
-              target="_blank"
               href={link.href}
+              target="_blank"
               underline="none"
-              color="inherit"
-              sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
+              sx={{ 
+                display: 'flex',
+                justifyContent: 'center',
+                alignItems: 'center',
+                height: 40,
+                color: theme => theme.palette.mode === 'dark' ? '#858585' : '#666666',
+                '&:hover': {
+                  color: theme => theme.palette.mode === 'dark' ? 'white' : '#333333',
+                  backgroundColor: theme => theme.palette.mode === 'dark' ? 'rgba(255,255,255,0.05)' : 'rgba(0,0,0,0.05)',
+                },
+              }}
             >
-              <Box
-                sx={{
-                  flexGrow: 0,
-                  m: 0.5,
-                  color: "#858585",
-                  fontSize: 24,
-                  "&:hover": {
-                    color: "white",
-                  },
-                  cursor: "pointer",
-                }}
-                display="flex"
-                justifyContent="center"
-              >
-                <Box mt={0.7}>{link.icon}</Box>
-              </Box>
+              {link.icon}
             </Link>
           </Tooltip>
         ))}
-      </Box>
-
-      <Box
-        sx={{ flexGrow: 0, pb: 0.5 }}
-        display="flex"
-        justifyContent="center"
-        flexDirection="column"
-      >
-        <Tooltip
-          title={darkMode ? "Turn on the light" : "Turn off the light"}
-          placement="right"
-          arrow
-        >
-          <Box
+        
+        <Divider sx={{ my: 1, mx: 1 }} />
+        
+        {/* Theme toggle */}
+        <Tooltip title={darkMode ? "Light Mode" : "Dark Mode"} placement="right">
+          <IconButton
             sx={{
-              flexGrow: 0,
-              fontSize: 24,
-              color: "#858585",
-              cursor: "pointer",
-              "&:hover": {
-                color: "white",
-              },
-              WebkitTapHighlightColor: "rgba(0,0,0,0)",
+              width: "100%", 
+              height: 48,
+              borderRadius: 0,
             }}
-            display="flex"
-            justifyContent="center"
             onClick={handleThemeChange}
           >
-            {!darkMode ? (
-              <Box>
-                <DarkModeOutlinedIcon />
-              </Box>
+            {darkMode ? (
+              <LightModeOutlinedIcon sx={iconStyle} />
             ) : (
-              <Box>
-                <LightModeOutlinedIcon />
-              </Box>
+              <DarkModeOutlinedIcon sx={iconStyle} />
             )}
-          </Box>
+          </IconButton>
         </Tooltip>
-        <Tooltip title="Markdown syntax" arrow placement="right">
-          <Link
-            onClick={() => {
-              setSelectedIndex(-1);
-              navigate("/docs");
+        
+        {/* Settings */}
+        <Tooltip title="Settings" placement="right">
+          <IconButton
+            sx={{
+              width: "100%", 
+              height: 48,
+              borderRadius: 0,
             }}
-            underline="none"
-            color="inherit"
-            sx={{ WebkitTapHighlightColor: "rgba(0,0,0,0)" }}
+            onClick={() => {
+              navigate("/docs");
+              setSelectedIndex(10);
+            }}
           >
-            <Box
-              sx={{
-                flexGrow: 0,
-                fontSize: 24,
-                color: "#858585",
-                cursor: "pointer",
-                "&:hover": {
-                  color: "white",
-                },
-                WebkitTapHighlightColor: "rgba(0,0,0,0)",
-              }}
-              display="flex"
-              justifyContent="center"
-            >
-              <Box mt={0.7}>
-                <VscSettingsGear />
-              </Box>
-            </Box>
-          </Link>
+            <VscSettingsGear style={iconStyle} />
+          </IconButton>
         </Tooltip>
       </Box>
     </Box>

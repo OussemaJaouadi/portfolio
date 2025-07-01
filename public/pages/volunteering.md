@@ -22,9 +22,7 @@
 - Collaborated with Seif Besbes to develop a penetration testing workshop.
 - Trained Securinets junior members in basic networking, Linux fundamentals, and penetration testing methodologies.
 
-<div style="text-align:center;">
-  <img src="https://i.ibb.co/Q6BPfJS/author.jpg" alt="Workshop" style="width:50%;" />
-</div>
+![Workshop](https://i.ibb.co/Q6BPfJS/author.jpg "Penetration Testing Workshop")
 
 <br>
 <br>
@@ -36,9 +34,7 @@
 - Proposed and helped implement a real-life escape room game during CyberCamp 2021, which became the foundation for future real-life CTFs like CyberPunk (2023) and the NCSC event.
 - Co-developed the backend for the NCSC Booking website (2022) using Express.js, alongside Hazem Ben Said.
 
-<div style="text-align:center;">
-  <img src="https://i.ibb.co/KWxVvqn/escape-room.jpg" alt="Escape Room" style="width:50%;" />
-</div>
+![Escape Room](https://i.ibb.co/KWxVvqn/escape-room.jpg "Cybersecurity Escape Room")
 
 <br>
 <br>
