@@ -7,7 +7,7 @@
   *Eastern culture fascinates me, and anime and manga have been a gateway to exploring this rich cultural landscape. They offer unique storytelling methods and cultural insights that I find both intriguing and inspiring.*
 
 - **Sports**  
-  *Sports, particularly football, have always been a major interest. I used to follow many games closely and enjoyed the excitement they brought. Though my schedule limits my viewing time now, my passion for the sport remains.*
+  *Sports, particularly football and Formula 1 (F1), have always been major interests. I used to follow many games and races closely and enjoyed the excitement they brought. Though my schedule limits my viewing time now, my passion for these sports remains.*
 
 - **Music**  
   *Music is an essential part of my life. Whether it's relaxing with classical tunes, getting energized with upbeat tracks, or exploring new genres, music enhances my daily routine and helps me unwind or stay motivated.*

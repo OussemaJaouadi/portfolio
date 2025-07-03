@@ -2,6 +2,10 @@
 
 ## Cloud & DevOps
 
+### Programming Languages
+- **Python**  
+  *I've been using Python for over 9 years, applying it to a wide range of tasks including automation, scripting, backend development, data analysis, and more. It's my go-to language for rapid prototyping and production-ready solutions alike.*
+
 ### Containerization & Orchestration
 - **Docker**  
   *I've been using Docker for around 4 years now, and it's become my go-to for setting up local dev environments. It's reliable, simple, and flexible.*
@@ -52,7 +56,7 @@
 
 ### Backend Development
 - **Python Ecosystem**  
-  *My daily driver for 7 years! Used Flask for API development and automation scripts for vulnerability scanning at Trustable.*
+  *My daily driver for 9 years—whether it's web dev, automation, scripting, LLM tinkering, or building personal tools, Python is my Swiss Army knife for getting things done fast and right.*
   - **Flask**: Great for rapid development, used in DevOps and Cybersecurity projects
   - **FastAPI**: Impressed by its data validation with Pydantic and async capabilities
 - **JavaScript/TypeScript Ecosystem**  
