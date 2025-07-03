@@ -20,13 +20,12 @@
 
 &nbsp;
 
-**Cyber Security Intern** @ [Trustable](https://trustable.fr/) _(July 2023 - Sep 2023)_ 🔗
+**CyberSecurity Intern** @ [Trustable](https://trustable.fr/) _(July 2023 - Sep 2023)_ 🔗
 
-- Reengineered Docker Swarm networks to isolate faults and enhance throughput for security-critical services.
-- Deployed automated vulnerability scanning system via Bash/Python scripts identifying container security gaps.
-- Established container hardening guidelines adopted into company security standards.
+- Optimized Docker Swarm existing solution to reduce containers' RAM and CPU usage.
 - Designed and implemented custom connectors for existing Threat Intelligence solution.
-> _**Keywords:**_ Cybersecurity, Docker, Automation, Vulnerability Scanning, Threat Intelligence, Python
+- Real-time collection of news, trends, attacks, reported vulnerabilities, updates, patches, active malware, and APTs.
+> _**Keywords:**_ Cybersecurity, Threat Intelligence, Python, Bash, Docker, Docker Swarm, OpenCTI
 
 &nbsp;
 
