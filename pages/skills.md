@@ -5,6 +5,10 @@
 ### Programming Languages
 - **Python**  
   *I've been using Python for over 9 years, applying it to a wide range of tasks including automation, scripting, backend development, data analysis, and more. It's my go-to language for rapid prototyping and production-ready solutions alike.*
+- **Go**  
+  *Used Echo, Gin frameworks, and GORM ORM for backend APIs.*
+- **TypeScript/JavaScript**  
+  *Prefer TypeScript for type safety; Express.js and NestJS for backend.*
 
 ### Containerization & Orchestration
 - **Docker**  
@@ -12,14 +16,14 @@
 - **Docker Swarm**  
   *Spent about 2 years working with Docker Swarm. Used it extensively at Calgra Group to implement failover strategies that ensure 100% uptime during peak traffic.*
 - **Kubernetes**  
-  *My preference for the last year. Working through the CKA/CKAD courses on KodeKloud. I use KinD for projects, but also tried K3d and loved it! Set up a kubeadm cluster for learning and actively create Kubernetes manifests using Helm and Kustomize.*
-- **Hashicorp Nomad**
+  *My preference for the last 2 years. Working through the CKA/CKAD courses on KodeKloud. I use KinD for projects, but also tried K3d and loved it! Set up a kubeadm cluster for learning and actively create Kubernetes manifests using Helm and Kustomize.*
+- **Hashicorp Nomad**  
   *I read about it recently and liked its simplicity. On my list to explore further.*
 
 ### Infrastructure as Code (IaC)
 - **Ansible**  
   *Started learning Ansible in early 2024 and quickly became a fan. Used it at Piterion to automate Joomla/Camunda deployments, eliminating manual errors.*
-- **Terraform**
+- **Terraform**  
   *Familiar with Terraform concepts and HCL syntax. Understand core concepts like tfstate but looking for more hands-on projects.*
 
 ### Cloud Platforms
@@ -31,14 +35,8 @@
   *Used Hetzner cloud services at Calgra Group for CI/CD pipelines. Impressed by their simplicity and cost-effectiveness, especially with no data export fees.*
 
 ### CI/CD & GitOps
-- **GitLab CI**  
-  *My preferred CI/CD tool for its power and flexibility. Used it in the DevOps Academic Project with ArgoCD.*
-- **GitHub Actions**  
-  *Used at Calgra Group to transform CI/CD pipelines on Hetzner infrastructure, accelerating deployments while ensuring environment parity.*
-- **Jenkins**  
-  *Experience from university projects, though I prefer GitLab CI and GitHub Actions.*
-- **ArgoCD**  
-  *Added to my toolkit in Dec 2023. Used it to establish GitOps workflow in the DevOps Academic Project, eliminating manual deployment errors.*
+- **GitLab CI, GitHub Actions, Jenkins, ArgoCD**  
+  *Automated deployments, established GitOps workflows.*
 
 ### Observability & Monitoring
 - **Prometheus & Grafana**  
@@ -52,6 +50,11 @@
 - **MQTT, Kafka, Pub/Sub**  
   *Conceptual understanding of these messaging systems, though limited hands-on experience.*
 
+---
+
+## Security
+- *Pentesting (Web, Crypto CTFs), Hack The Box, TryHackMe, secure manifests, Linux/Windows/AD, attack surface minimization.*
+
 ## Software Development
 
 ### Backend Development
@@ -59,14 +62,12 @@
   *My daily driver for 9 years—whether it's web dev, automation, scripting, LLM tinkering, or building personal tools, Python is my Swiss Army knife for getting things done fast and right.*
   - **Flask**: Great for rapid development, used in DevOps and Cybersecurity projects
   - **FastAPI**: Impressed by its data validation with Pydantic and async capabilities
-- **JavaScript/TypeScript Ecosystem**  
-  *Prefer TypeScript for its type safety.*
-  - **NestJS**: My favorite backend framework for its structure and flexibility
-  - **Express.js**: Comfortable using it with TypeScript
+- **Go**  
+  *Echo, Gin, GORM for backend APIs.*
+- **JavaScript/TypeScript**  
+  *NestJS, Express.js for backend APIs.*
 - **.NET**  
   *Explored and appreciated aspects compared to Java, especially SignalR and dependency injection. Found limitations in Entity Framework Core when switching database types.*
-- **Go**  
-  *Appreciate its simplicity and straightforward approach to backend development.*
 
 ### Frontend Development
 - **Angular**  
@@ -94,13 +95,13 @@
 
 ## Cybersecurity
 - **Infrastructure Security**  
-  *Established container hardening guidelines at Trustable that were adopted into company security standards.*
+  *Established container hardening guidelines at Trustable that were adopted into company security standards. Minimized attack surface and wrote secure manifests. Strong in Linux, good with Windows/Active Directory.*
 - **Web Application Security**  
-  *Crafted OWASP Top 10 vulnerability simulation platform for security training.*
+  *Crafted OWASP Top 10 vulnerability simulation platform for security training. CTF player (Web, Crypto), secure code review, and pentesting mindset.*
 - **Penetration Testing**  
-  *Experience with tools like Nmap, Burpsuite, and custom Python testing automation.*
+  *Experience with Hack The Box, TryHackMe, Nmap, Burpsuite, and custom Python testing automation. Specialized in CTFs (Web, Crypto).* 
 - **Secure Coding Practices**  
-  *Code review experience focused on identifying security flaws.*
+  *Code review experience focused on identifying security flaws and minimizing risk.*
 - **Role-Based Access Control (RBAC)**  
   *Implemented in Kubernetes contexts.*
 
@@ -114,11 +115,3 @@
 ## Version Control
 - **Git, GitHub, GitLab**  
   *Version control is second nature at this point. Used extensively in all projects and professional roles.*
-
-## To Do & Learning Goals
-- **CKA/CKAD Certifications**  
-  *Currently working through these for Kubernetes mastery.*
-- **Advanced Agential AI**  
-  *Eager to explore more complex agent architectures and multi-agent systems.*
-- **Hashicorp Vault**  
-  *On my list to learn for better secrets management.*

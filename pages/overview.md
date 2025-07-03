@@ -1,8 +1,8 @@
 # 📖 Overview
 
-As a graduate in Computer Networks and Telecommunication Engineering from the National Institute of Applied Science and Technologies (INSAT) (Jun 2025), I am actively pursuing a career in DevOps and Site Reliability Engineering (SRE). My journey in technology has been driven by a passion for system architecture, adherence to best practices, and a commitment to continuous learning.
+As a graduate in Computer Networks and Telecommunication Engineering from the National Institute of Applied Science and Technologies (INSAT) (Jun 2025), I am actively pursuing a career in Site Reliability Engineering (SRE). My journey in technology has been driven by a passion for system architecture, adherence to best practices, and a commitment to continuous learning.
 
-I have a solid foundation in DevOps, with hands-on experience in Docker, Kubernetes, Ansible, and a range of CI/CD tools. My background includes backend development and cybersecurity, with experience in CTF participation and challenge creation. Through internships and volunteer work, I have gained valuable project experience and technical skills.
+I have a solid foundation in SRE and DevOps, with hands-on experience in Docker, Kubernetes, Ansible, and a range of CI/CD tools. My background includes backend development and a touch of security. Through internships and volunteer work, I have gained valuable project experience and technical skills.
 
 I am currently pursuing certifications to further deepen my knowledge and skills. My professional ethos revolves around embracing constructive criticism, fostering trust and accountability, thriving on diverse perspectives, and striving for continuous improvement.
 
