@@ -10,6 +10,6 @@ I am always open to new opportunities and environments, and I pride myself on be
 
 I am excited to contribute to projects that push the boundaries of what's possible, focusing on creating and refining systems that stand out for their robustness, efficiency, and innovation.
 
-[Download My CV](./Oussema_Jaouadi_CV.pdf) 
+[Download My CV](./Oussema_Jaouadi_CV.pdf) | [Alternative Portfolio](https://oussemaportfolio.vercel.app/)
 
 Explore the sections below for a deeper look at my experiences, projects, and technical skills in DevOps and SRE.

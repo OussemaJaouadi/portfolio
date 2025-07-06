@@ -178,6 +178,42 @@ export default function Home({ setSelectedIndex }: Props) {
                 ))}
               </Stack>
             </Grid>
+            
+            {/* HR-friendly portfolio button */}
+            <Grid
+              display="flex"
+              justifyContent={{ xs: "center", sm: "flex-start" }}
+              sx={{ mt: 2 }}
+            >
+              <Link
+                href="https://oussemaportfolio.vercel.app/"
+                target="_blank"
+                underline="none"
+              >
+                <Box
+                  sx={{
+                    display: 'flex',
+                    alignItems: 'center',
+                    px: 2,
+                    py: 1,
+                    borderRadius: 2,
+                    bgcolor: theme => theme.palette.mode === 'dark' ? '#90caf9' : '#0d6efd',
+                    color: theme => theme.palette.mode === 'dark' ? '#212529' : '#ffffff',
+                    fontWeight: 600,
+                    transition: 'all 0.2s ease',
+                    boxShadow: '0 4px 6px rgba(0,0,0,0.1)',
+                    '&:hover': {
+                      transform: 'translateY(-2px)',
+                      boxShadow: '0 6px 12px rgba(0,0,0,0.15)',
+                      bgcolor: theme => theme.palette.mode === 'dark' ? '#64b5f6' : '#0b5ed7',
+                    }
+                  }}
+                >
+                  <Typography sx={{ mr: 1 }}>Alternative Portfolio Format</Typography>
+                  <Box component="span" sx={{ fontSize: '1.2rem' }}>→</Box>
+                </Box>
+              </Link>
+            </Grid>
           </Box>
         </Stack>
       </Grid>

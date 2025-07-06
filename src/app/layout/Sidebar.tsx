@@ -14,6 +14,7 @@ import MenuOpenIcon from "@mui/icons-material/MenuOpen";
 import ContactsOutlinedIcon from "@mui/icons-material/ContactsOutlined";
 import { VscFiles, VscSettingsGear, VscAccount } from "react-icons/vsc";
 import { BiGitBranch } from "react-icons/bi";
+import { MdWeb } from "react-icons/md"; // Added import for HR portfolio icon
 import { links } from "../pages/links";
 import { useNavigate } from "react-router-dom";
 
@@ -128,6 +129,22 @@ export default function Sidebar({
             }}
           >
             <BiGitBranch style={iconStyle} />
+          </Link>
+        </Tooltip>
+        
+        {/* Alternative Portfolio Format */}
+        <Tooltip title="Alternative Portfolio Format" placement="right">
+          <Link
+            href="https://oussemaportfolio.vercel.app/"
+            target="_blank"
+            sx={{ 
+              display: 'flex',
+              justifyContent: 'center',
+              alignItems: 'center',
+              height: 48,
+            }}
+          >
+            <MdWeb style={iconStyle} />
           </Link>
         </Tooltip>
       </Box>
